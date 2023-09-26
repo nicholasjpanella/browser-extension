@@ -1,0 +1,6 @@
+{
+  "name": "hello-extension",
+  "displayName": "Hello Extension",
+  "version": "1.0.0-next.0",
+  "description": "Example Extension"
+}

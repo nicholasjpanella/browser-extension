@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0-next.0",
+  "packages": ["build/extension"],
+  "command": {
+    "version": {
+      "allowBranch": "main",
+      "gitTagVersion": false,
+      "exact": true,
+      "noPush": true,
+      "ignoreChanges": true
+    }
+  }
+}

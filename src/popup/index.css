@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+* {
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    color: var(--text);
+
+    --primary10: #F38468; /*primary-disabled*/
+    --primary20: #F17455;
+    --primary30: #F06543; /*primary*/
+    --primary40: #EE562F;
+    --primary50: #ED461D;
+
+    --secondary10: #F7CBA1;
+    --secondary20: #F4B67C;
+    --secondary30: #F09D51;
+    --secondary40: #ED8C31;
+    --secondary50: #E17714;
+
+    --white10: #FFFFFF;
+    --white20: #F4F5F6;
+    --white30: #E8E9EB;/*offwhite*/
+    --white40: #E0E0E0;
+    --white50: #D6D6D6;/*slate*/
+    --white60: #C5C5C5;/*slate-select*/
+
+    --black10: #5F696D; /*border*/
+    --black20: #4C5457; /*subtext*/
+    --black30: #313638; /*onyx*/
+    --black40: #262A2C; /*text*/
+    --black50: #131516;
+
+    --primary: var(--primary30);
+    --primary-disabled: var(--primary10);
+    --text: var(--black40);
+}
+
+html, body {
+    margin: 0; padding: 0;
+    /* background: linear-gradient(135deg, var(--primary30) 15%, var(--secondary20) 100%); */
+    background: var(--white20)
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: unset;
+}
