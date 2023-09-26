@@ -1,13 +1,15 @@
 import withSuspense from "@root/src/_framework/hoc/withSuspense";
 import { HashRouter, Route, Navigate, Routes, Outlet } from "react-router-dom";
-import Login from "./login/Login";
-import Setup from "./setup/Setup";
+import Hello from "./hello/Hello";
 import styled from "@emotion/styled";
-import { useEffect } from "react";
 
 const Container = styled.div({
   width: 320,
-  height: 500,
+  height: 150,
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
 });
 
 Container.defaultProps = {
@@ -19,9 +21,8 @@ export default withSuspense(function () {
     <HashRouter>
       <Routes>
         <Route path="/" element={<Container />}>
-          <Route path="login" element={<Login />} />
-          <Route path="setup" element={<Setup />} />
-          <Route path="" element={<Navigate to="/setup" />} />
+          <Route path="hello" element={<Hello />} />
+          <Route path="" element={<Navigate to="/hello" />} />
         </Route>
         <Route path="" element={<Navigate to="/" />} />
       </Routes>

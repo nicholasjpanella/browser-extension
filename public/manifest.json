@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Hello Extension",
+  "version": "1.0.0.0",
+  "description": "Example Extension",
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "src/background/index.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "src/popup/index.html",
+    "default_icon": "Icon.png"
+  },
+  "icons": {
+    "128": "Icon.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/js/*.js",
+        "assets/css/*.css",
+        "Icon.png"
+      ],
+      "matches": [
+        "*://*/*"
+      ]
+    }
+  ]
+}

@@ -21,9 +21,11 @@ export default function makeManifest(
     // Naming change for cache invalidation
     if (config.contentScriptCssKey && manifest.content_scripts) {
       manifest.content_scripts.forEach((script) => {
-        script.css = script.css.map((css) =>
-          css.replace("<KEY>", config.contentScriptCssKey)
-        );
+        if (script.css) {
+          script.css = script.css.map((css) =>
+            css.replace("<KEY>", config.contentScriptCssKey)
+          );
+        }
       });
     }
 
@@ -41,9 +43,9 @@ export default function makeManifest(
       if (!config.isDev) return;
       makeManifest(distDir);
     },
-    // buildEnd() {
-    //   if (config.isDev) return;
-    //   makeManifest(publicDir);
-    // },
+    buildEnd() {
+      if (config.isDev) return;
+      makeManifest(publicDir);
+    },
   };
 }
