@@ -1,5 +1,5 @@
 {
-  "name": "@bitlogix/browser-extension",
+  "name": "browser-extension",
   "scripts": {
     "build": "tsc --noEmit && vite build",
     "build:firefox": "tsc --noEmit && cross-env __FIREFOX__=true vite build",

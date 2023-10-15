@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
-* {
-    font-family: 'Rubik', sans-serif;
-    box-sizing: border-box;
-    color: var(--text);
-
+:root {
     --primary10: #F38468; /*primary-disabled*/
     --primary20: #F17455;
     --primary30: #F06543; /*primary*/
@@ -33,6 +29,12 @@
     --primary: var(--primary30);
     --primary-disabled: var(--primary10);
     --text: var(--black40);
+}
+
+* {
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    color: var(--text);
 }
 
 html, body {
